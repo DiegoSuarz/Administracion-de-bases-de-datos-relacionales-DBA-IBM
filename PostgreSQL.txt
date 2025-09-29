@@ -1,0 +1,22 @@
+sudo -u postgres psql
+
+sudo -u postgres psql -d nombre_base -U postgres
+
+sudo -i -u postgres
+psql
+
+
+Reiniciar el servicio
+sudo systemctl restart postgresql
+
+Detener y luego iniciar (si prefieres hacerlo en dos pasos)
+sudo systemctl stop postgresql
+sudo systemctl start postgresql
+
+Recargar solo la configuración (sin reiniciar todo el servicio)
+sudo systemctl reload postgresql
+
+Verificar el estado del servicio
+sudo systemctl status postgresql
+
+/etc/postgresql/17/main/postgresql.conf
