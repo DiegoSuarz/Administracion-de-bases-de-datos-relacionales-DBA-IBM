@@ -10,5 +10,8 @@
 
 '11_MEJORANDO RENDIMIENTO DE CONSULTAS LENTAS MySQL'/employeesdb
 
+15_Automatización de tareas en MySQL mediante scripts de shell/dir_respaldo
+
+15_Automatización de tareas en MySQL mediante scripts de shell/backups
 
 *.zip
