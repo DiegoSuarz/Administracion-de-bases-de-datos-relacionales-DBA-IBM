@@ -8,8 +8,12 @@ DATABASE='sakila'
 echo "Pulling Database: This may take a few minutes"
 
 # Set the folder where the database backup will be stored
-# backupfolder=./backups
 backupfolder=/mnt/c/Users/'dg_su/OneDrive - Universidad Tecnologica del Peru'/Estudios/Cursos/'Analisis de Datos'/DATABASE/'Administración de bases de datos relacionales (DBA) IBM'/code/'15_Automatización de tareas en MySQL mediante scripts de shell'/backups
+
+if [ ! -d "$backupfolder" ]; then 
+    mkdir "$backupfolder"
+fi
+
 # Number of days to store the backup 
 keep_day=30
 
